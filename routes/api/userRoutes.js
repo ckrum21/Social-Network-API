@@ -12,7 +12,11 @@ router.route('/').get(getUser).post(createUser);
 
 router.route('/:userId').get(getSingleUser).put(updateUser);
 
-router.routes('/:userId/friends/:friendId').post(addFriend).delete(deleteFriend);
+router.route('/:userId/friends/:friendId').post(addFriend).delete(deleteFriend);
 
 module.exports = router;
+
+
+
+
 
